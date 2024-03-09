@@ -13,5 +13,9 @@ os.makedirs(log_dir_path, exist_ok=True)
 logging.basicConfig(
     level=logging.INFO,
     filename=logfile_path, 
-    format="[%(asctime)s - %(lineno)d - %(name)s - %(levelname)s - %(message)s)]"
+    format="[%(asctime)s] - %(lineno)d - %(name)s - %(levelname)s - %(message)s"
 )
+
+
+if __name__ == "__main__":
+    logging.info("logging is created....")
