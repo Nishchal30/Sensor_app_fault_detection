@@ -7,4 +7,6 @@ seaborn
 pymongo
 black
 pyYAML
+python-dotenv
+
 -e .

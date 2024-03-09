@@ -3,5 +3,6 @@
 **/*.csv
 .venv/
 **/*.egg-info
+.env
 **/*.gitkeep
 logs/

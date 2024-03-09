@@ -6,7 +6,10 @@ from pathlib import Path
 from dataclasses import dataclass
 from src.logger import logging
 from src.exception import CustomException
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 def read_yaml(yaml_path : Path):
     try:
@@ -23,7 +26,8 @@ def read_yaml(yaml_path : Path):
 def data_dump_to_mongodb(data_url : str, db_name : str, collection_name : str):
     
     try:
-        client = pymongo.MongoClient("mongodb+srv://Nishchal30:Nishchal30@cluster0.9omin78.mongodb.net/")
+        mongo_client = os.getenv(mongo_client)
+        client = pymongo.MongoClient(mongo_client)
         data = pd.read_csv(data_url)
         # data.to_csv(os.path.join(data_save_location, "sensor_data.csv"), index=False)
 
