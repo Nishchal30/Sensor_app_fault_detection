@@ -1,0 +1,488 @@
+data_distribution:
+  aa_000:
+    Same distribution: true
+    pvalue: 0.998491631694295
+  ac_000:
+    Same distribution: false
+    pvalue: .nan
+  ae_000:
+    Same distribution: false
+    pvalue: .nan
+  af_000:
+    Same distribution: false
+    pvalue: .nan
+  ag_000:
+    Same distribution: false
+    pvalue: .nan
+  ag_001:
+    Same distribution: false
+    pvalue: .nan
+  ag_002:
+    Same distribution: false
+    pvalue: .nan
+  ag_003:
+    Same distribution: false
+    pvalue: .nan
+  ag_004:
+    Same distribution: false
+    pvalue: .nan
+  ag_005:
+    Same distribution: false
+    pvalue: .nan
+  ag_006:
+    Same distribution: false
+    pvalue: .nan
+  ag_007:
+    Same distribution: false
+    pvalue: .nan
+  ag_008:
+    Same distribution: false
+    pvalue: .nan
+  ag_009:
+    Same distribution: false
+    pvalue: .nan
+  ah_000:
+    Same distribution: false
+    pvalue: .nan
+  ai_000:
+    Same distribution: false
+    pvalue: .nan
+  aj_000:
+    Same distribution: false
+    pvalue: .nan
+  ak_000:
+    Same distribution: false
+    pvalue: .nan
+  al_000:
+    Same distribution: false
+    pvalue: .nan
+  am_0:
+    Same distribution: false
+    pvalue: .nan
+  an_000:
+    Same distribution: false
+    pvalue: .nan
+  ao_000:
+    Same distribution: false
+    pvalue: .nan
+  ap_000:
+    Same distribution: false
+    pvalue: .nan
+  aq_000:
+    Same distribution: false
+    pvalue: .nan
+  ar_000:
+    Same distribution: false
+    pvalue: .nan
+  as_000:
+    Same distribution: false
+    pvalue: .nan
+  at_000:
+    Same distribution: false
+    pvalue: .nan
+  au_000:
+    Same distribution: false
+    pvalue: .nan
+  av_000:
+    Same distribution: false
+    pvalue: .nan
+  ax_000:
+    Same distribution: false
+    pvalue: .nan
+  ay_000:
+    Same distribution: false
+    pvalue: .nan
+  ay_001:
+    Same distribution: false
+    pvalue: .nan
+  ay_002:
+    Same distribution: false
+    pvalue: .nan
+  ay_003:
+    Same distribution: false
+    pvalue: .nan
+  ay_004:
+    Same distribution: false
+    pvalue: .nan
+  ay_005:
+    Same distribution: false
+    pvalue: .nan
+  ay_006:
+    Same distribution: false
+    pvalue: .nan
+  ay_007:
+    Same distribution: false
+    pvalue: .nan
+  ay_008:
+    Same distribution: false
+    pvalue: .nan
+  ay_009:
+    Same distribution: false
+    pvalue: .nan
+  az_000:
+    Same distribution: false
+    pvalue: .nan
+  az_001:
+    Same distribution: false
+    pvalue: .nan
+  az_002:
+    Same distribution: false
+    pvalue: .nan
+  az_003:
+    Same distribution: false
+    pvalue: .nan
+  az_004:
+    Same distribution: false
+    pvalue: .nan
+  az_005:
+    Same distribution: false
+    pvalue: .nan
+  az_006:
+    Same distribution: false
+    pvalue: .nan
+  az_007:
+    Same distribution: false
+    pvalue: .nan
+  az_008:
+    Same distribution: false
+    pvalue: .nan
+  az_009:
+    Same distribution: false
+    pvalue: .nan
+  ba_000:
+    Same distribution: false
+    pvalue: .nan
+  ba_001:
+    Same distribution: false
+    pvalue: .nan
+  ba_002:
+    Same distribution: false
+    pvalue: .nan
+  ba_003:
+    Same distribution: false
+    pvalue: .nan
+  ba_004:
+    Same distribution: false
+    pvalue: .nan
+  ba_005:
+    Same distribution: false
+    pvalue: .nan
+  ba_006:
+    Same distribution: false
+    pvalue: .nan
+  ba_007:
+    Same distribution: false
+    pvalue: .nan
+  ba_008:
+    Same distribution: false
+    pvalue: .nan
+  ba_009:
+    Same distribution: false
+    pvalue: .nan
+  bb_000:
+    Same distribution: false
+    pvalue: .nan
+  bc_000:
+    Same distribution: false
+    pvalue: .nan
+  bd_000:
+    Same distribution: false
+    pvalue: .nan
+  be_000:
+    Same distribution: false
+    pvalue: .nan
+  bf_000:
+    Same distribution: false
+    pvalue: .nan
+  bg_000:
+    Same distribution: false
+    pvalue: .nan
+  bh_000:
+    Same distribution: false
+    pvalue: .nan
+  bi_000:
+    Same distribution: false
+    pvalue: .nan
+  bj_000:
+    Same distribution: false
+    pvalue: .nan
+  bs_000:
+    Same distribution: false
+    pvalue: .nan
+  bt_000:
+    Same distribution: false
+    pvalue: .nan
+  bu_000:
+    Same distribution: false
+    pvalue: .nan
+  bv_000:
+    Same distribution: false
+    pvalue: .nan
+  bx_000:
+    Same distribution: false
+    pvalue: .nan
+  by_000:
+    Same distribution: false
+    pvalue: .nan
+  bz_000:
+    Same distribution: false
+    pvalue: .nan
+  ca_000:
+    Same distribution: false
+    pvalue: .nan
+  cb_000:
+    Same distribution: false
+    pvalue: .nan
+  cc_000:
+    Same distribution: false
+    pvalue: .nan
+  cd_000:
+    Same distribution: false
+    pvalue: .nan
+  ce_000:
+    Same distribution: false
+    pvalue: .nan
+  ci_000:
+    Same distribution: false
+    pvalue: .nan
+  cj_000:
+    Same distribution: false
+    pvalue: .nan
+  ck_000:
+    Same distribution: false
+    pvalue: .nan
+  class:
+    Same distribution: true
+    pvalue: 1.0
+  cn_000:
+    Same distribution: false
+    pvalue: .nan
+  cn_001:
+    Same distribution: false
+    pvalue: .nan
+  cn_002:
+    Same distribution: false
+    pvalue: .nan
+  cn_003:
+    Same distribution: false
+    pvalue: .nan
+  cn_004:
+    Same distribution: false
+    pvalue: .nan
+  cn_005:
+    Same distribution: false
+    pvalue: .nan
+  cn_006:
+    Same distribution: false
+    pvalue: .nan
+  cn_007:
+    Same distribution: false
+    pvalue: .nan
+  cn_008:
+    Same distribution: false
+    pvalue: .nan
+  cn_009:
+    Same distribution: false
+    pvalue: .nan
+  cp_000:
+    Same distribution: false
+    pvalue: .nan
+  cq_000:
+    Same distribution: false
+    pvalue: .nan
+  cs_000:
+    Same distribution: false
+    pvalue: .nan
+  cs_001:
+    Same distribution: false
+    pvalue: .nan
+  cs_002:
+    Same distribution: false
+    pvalue: .nan
+  cs_003:
+    Same distribution: false
+    pvalue: .nan
+  cs_004:
+    Same distribution: false
+    pvalue: .nan
+  cs_005:
+    Same distribution: false
+    pvalue: .nan
+  cs_006:
+    Same distribution: false
+    pvalue: .nan
+  cs_007:
+    Same distribution: false
+    pvalue: .nan
+  cs_008:
+    Same distribution: false
+    pvalue: .nan
+  cs_009:
+    Same distribution: false
+    pvalue: .nan
+  dd_000:
+    Same distribution: false
+    pvalue: .nan
+  de_000:
+    Same distribution: false
+    pvalue: .nan
+  df_000:
+    Same distribution: false
+    pvalue: .nan
+  dg_000:
+    Same distribution: false
+    pvalue: .nan
+  dh_000:
+    Same distribution: false
+    pvalue: .nan
+  di_000:
+    Same distribution: false
+    pvalue: .nan
+  dj_000:
+    Same distribution: false
+    pvalue: .nan
+  dk_000:
+    Same distribution: false
+    pvalue: .nan
+  dl_000:
+    Same distribution: false
+    pvalue: .nan
+  dm_000:
+    Same distribution: false
+    pvalue: .nan
+  dn_000:
+    Same distribution: false
+    pvalue: .nan
+  do_000:
+    Same distribution: false
+    pvalue: .nan
+  dp_000:
+    Same distribution: false
+    pvalue: .nan
+  dq_000:
+    Same distribution: false
+    pvalue: .nan
+  dr_000:
+    Same distribution: false
+    pvalue: .nan
+  ds_000:
+    Same distribution: false
+    pvalue: .nan
+  dt_000:
+    Same distribution: false
+    pvalue: .nan
+  du_000:
+    Same distribution: false
+    pvalue: .nan
+  dv_000:
+    Same distribution: false
+    pvalue: .nan
+  dx_000:
+    Same distribution: false
+    pvalue: .nan
+  dy_000:
+    Same distribution: false
+    pvalue: .nan
+  dz_000:
+    Same distribution: false
+    pvalue: .nan
+  ea_000:
+    Same distribution: false
+    pvalue: .nan
+  eb_000:
+    Same distribution: false
+    pvalue: .nan
+  ee_000:
+    Same distribution: false
+    pvalue: .nan
+  ee_001:
+    Same distribution: false
+    pvalue: .nan
+  ee_002:
+    Same distribution: false
+    pvalue: .nan
+  ee_003:
+    Same distribution: false
+    pvalue: .nan
+  ee_004:
+    Same distribution: false
+    pvalue: .nan
+  ee_005:
+    Same distribution: false
+    pvalue: .nan
+  ee_006:
+    Same distribution: false
+    pvalue: .nan
+  ee_007:
+    Same distribution: false
+    pvalue: .nan
+  ee_008:
+    Same distribution: false
+    pvalue: .nan
+  ee_009:
+    Same distribution: false
+    pvalue: .nan
+  ef_000:
+    Same distribution: false
+    pvalue: .nan
+  eg_000:
+    Same distribution: false
+    pvalue: .nan
+missing_values_in_raw_data:
+- ab_000
+- ad_000
+- bk_000
+- bl_000
+- bm_000
+- bn_000
+- bo_000
+- bp_000
+- bq_000
+- br_000
+- cf_000
+- cg_000
+- ch_000
+- cl_000
+- cm_000
+- co_000
+- cr_000
+- ct_000
+- cu_000
+- cv_000
+- cx_000
+- cy_000
+- cz_000
+- da_000
+- db_000
+- dc_000
+- ec_00
+- ed_000
+missing_values_in_train_data:
+- ab_000
+- ad_000
+- bk_000
+- bl_000
+- bm_000
+- bn_000
+- bo_000
+- bp_000
+- bq_000
+- br_000
+- cf_000
+- cg_000
+- ch_000
+- cl_000
+- cm_000
+- co_000
+- cr_000
+- ct_000
+- cu_000
+- cv_000
+- cx_000
+- cy_000
+- cz_000
+- da_000
+- db_000
+- dc_000
+- ec_00
+- ed_000

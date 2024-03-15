@@ -63,6 +63,19 @@ def convert_columns_to_float(df:pd.DataFrame, exclude_column:list) -> pd.DataFra
     except Exception as e:
         logging.info(f"Error occured with message: {e}")
         raise CustomException(e, sys)
+    
+
+def write_yaml_file(file_path : Path, data:dict):
+    try:
+
+        file_dir = os.path.dirname(file_path)
+        os.makedirs(file_dir,exist_ok=True)
+        with open(file_path,"w") as file:
+            yaml.dump(data,file)
+
+    except Exception as e:
+        logging.info(f"The error occured in write_yaml method in utils.py as: {e}")
+        raise CustomException(e, sys)
 
 
 

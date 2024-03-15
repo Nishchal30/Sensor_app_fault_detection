@@ -1,7 +1,7 @@
 # Internel packages
 from src.logger import logging
 from src.exception import CustomException
-from src.Utils.utils import convert_columns_to_float, read_yaml
+from src.Utils.utils import convert_columns_to_float, read_yaml, write_yaml_file
 
 # Third-party libraries
 import pandas as pd
@@ -120,6 +120,11 @@ class DataPreprocessing:
             distribution = self.data_distribution(raw_data=raw_data, train_data=train_data, report_key="data_distribution")
 
             logging.info(f"The distribution of train and raw data is: \n{distribution}")
+
+            os.makedirs(self.validation_dir, exist_ok=True)
+            write_yaml_file(file_path=self.validation_report, data=self.validation_error)
+
+            logging.info(f"The yaml file is saved at {os.path.split(self.validation_dir)[0]}")
 
             return distribution
 
