@@ -5,6 +5,7 @@ from src.Utils.utils import read_yaml, data_dump_to_mongodb
 
 # Third-party libraries
 import pandas as pd
+import numpy as np
 import os, sys
 from sklearn.model_selection import train_test_split
 
@@ -48,7 +49,7 @@ class DataIngestion:
 
     # Method to actually start data ingestion in artifact directory
     def initiate_data_ingestion(self):
-        logging.info("Data ingestion process started...")
+        logging.info("===============================Data ingestion process started============================")
 
         try:
             data_dump_to_mongodb(self.data_url, self.db_name, self.collection_name)
@@ -57,6 +58,7 @@ class DataIngestion:
             )
 
             data = pd.read_csv(self.data_url)
+            data = data.replace(to_replace="na", value=np.NAN)
             logging.info(
                 f"The original data is read successfully with shape: {data.shape}"
             )
@@ -86,7 +88,7 @@ class DataIngestion:
             logging.info(
                 f"The train data with size: {train_data.shape} & test data with size: {test_data.shape} saved in artifacts directory"
             )
-            logging.info("Data ingestion process completed....")
+            logging.info("==========================Data ingestion process completed============================")
 
             return (
                 self.data_ingestion_config.yaml_config["data_ingestion"][

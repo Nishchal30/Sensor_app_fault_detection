@@ -8,3 +8,9 @@ data_ingestion:
   raw_data_path: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_ingestion/raw_data.csv"
   train_data_path: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_ingestion/train_data.csv"
   test_data_path: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_ingestion/test_data.csv"
+
+
+data_validation:
+  validation_dir: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_validation"
+  report_file_path: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_validation/report.yaml"
+  missing_threshold: 0.1
