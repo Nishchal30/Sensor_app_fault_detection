@@ -2,6 +2,7 @@ import pymongo, json, os, sys
 import pandas as pd
 import yaml
 from pathlib import Path
+import pickle
 
 from dataclasses import dataclass
 from src.logger import logging
@@ -78,4 +79,15 @@ def write_yaml_file(file_path : Path, data:dict):
         raise CustomException(e, sys)
 
 
+def save_object(filepath : Path, object):
+    try:
+        filedir = os.path.dirname(filepath)
+        os.makedirs(filedir, exist_ok=True)
+
+        with open(filepath, "wb") as f:
+            pickle.dump(object, f)
+    
+    except Exception as e:
+        logging.info(f"The error occured in save_object method in utils.py as: {e}")
+        raise CustomException(e, sys)
 

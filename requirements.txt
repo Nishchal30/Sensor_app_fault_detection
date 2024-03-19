@@ -8,5 +8,6 @@ pymongo
 black
 pyYAML
 python-dotenv
+imblearn
 
 -e .

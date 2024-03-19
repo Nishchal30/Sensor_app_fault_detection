@@ -49,7 +49,9 @@ class DataIngestion:
 
     # Method to actually start data ingestion in artifact directory
     def initiate_data_ingestion(self):
-        logging.info("===============================Data ingestion process started============================")
+        logging.info(
+            "=============================== Data ingestion process started ============================"
+        )
 
         try:
             data_dump_to_mongodb(self.data_url, self.db_name, self.collection_name)
@@ -88,7 +90,9 @@ class DataIngestion:
             logging.info(
                 f"The train data with size: {train_data.shape} & test data with size: {test_data.shape} saved in artifacts directory"
             )
-            logging.info("==========================Data ingestion process completed============================")
+            logging.info(
+                "========================== Data ingestion process completed ============================"
+            )
 
             return (
                 self.data_ingestion_config.yaml_config["data_ingestion"][
