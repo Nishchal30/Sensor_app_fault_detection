@@ -9,5 +9,6 @@ black
 pyYAML
 python-dotenv
 imblearn
+xgboost
 
 -e .

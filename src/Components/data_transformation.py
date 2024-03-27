@@ -5,7 +5,6 @@ from src.Utils.utils import read_yaml, save_object
 
 # Third-party libraries
 import pandas as pd
-import numpy as np
 import sys, os
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -93,12 +92,12 @@ class DataTransformation:
             train_target_transformed_data = pd.DataFrame(
                 target_pipeline_obj.named_steps["lable_encoder"].fit_transform(
                     train_target_data
-                )
+                ), columns = ["class"]
             )
             test_target_tarnsformed_data = pd.DataFrame(
                 target_pipeline_obj.named_steps["lable_encoder"].transform(
                     test_target_data
-                )
+                ), columns = ["class"]
             )
 
             train_feature_transformed_data = pd.DataFrame(
@@ -107,6 +106,7 @@ class DataTransformation:
                     train_feature_data.columns
                 ),
             )
+
             test_feature_transformed_data = pd.DataFrame(
                 feature_pipline_obj.transform(test_feature_data),
                 columns=feature_pipline_obj.get_feature_names_out(
@@ -143,12 +143,13 @@ class DataTransformation:
             )
 
             final_train_data = pd.concat(
-                [train_feature_transformed_data, train_target_transformed_data]
+                [train_feature_transformed_data, train_target_transformed_data], axis=1
             )
             final_test_data = pd.concat(
-                [test_feature_transformed_data, test_target_tarnsformed_data]
+                [test_feature_transformed_data, test_target_tarnsformed_data], axis=1
             )
 
+            
             os.makedirs(self.transformation_dir, exist_ok=True)
             final_train_data.to_csv(
                 os.path.join(self.transformation_dir, "resampled_train_data.csv"),
@@ -171,6 +172,8 @@ class DataTransformation:
             )
 
             logging.info("pipeline objects are saved successfully")
+
+            return final_train_data, final_test_data
 
         except Exception as e:
             logging.info(f"Error occured with message: {e}")

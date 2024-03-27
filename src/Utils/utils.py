@@ -3,6 +3,8 @@ import pandas as pd
 import yaml
 from pathlib import Path
 import pickle
+from typing import Any
+from sklearn.metrics import r2_score
 
 from dataclasses import dataclass
 from src.logger import logging
@@ -31,20 +33,13 @@ def data_dump_to_mongodb(data_url : str, db_name : str, collection_name : str):
         mongo_client = os.environ.get("mongo_conn")
         client = pymongo.MongoClient(mongo_client)
         data = pd.read_csv(data_url)
-        # data.to_csv(os.path.join(data_save_location, "sensor_data.csv"), index=False)
-
-        # print(f"Shape of data is {data.shape}")
-        # print(f"Data saved at {data_save_location}")
 
         json_data = list(json.loads(data.T.to_json()).values())
-        # print(json_data[0])
         
         if (db_name not in client.list_database_names()):
             client[db_name][collection_name].insert_many(json_data)
         else:
             logging.info(f"Database already exists in Mongo DB with name {db_name}")
-
-        # logging.info(f"The data has been stored in MongoDB with db name {db_name} and collection {collection_name}")
 
     except Exception as e:
         logging.info(f"Error occured with message: {e}")
@@ -91,3 +86,22 @@ def save_object(filepath : Path, object):
         logging.info(f"The error occured in save_object method in utils.py as: {e}")
         raise CustomException(e, sys)
 
+
+
+def evaluate_model(X_train : Any, y_train : Any, X_test : Any, y_test : Any, models : dict[str, Any]) -> Any:
+
+    try:
+        report = {}
+        for i in range(len(models)):
+            model = list(models.values())[i]
+
+            model.fit(X_train, y_train)
+            y_pred = model.predict(X_test)
+
+            score = r2_score(y_test, y_pred)
+
+            report[list(models.keys())[i]] = score
+
+    except Exception as e:
+        logging.error(f"Error occured at evaluate model method with: {e}")
+        raise CustomException(e, sys)

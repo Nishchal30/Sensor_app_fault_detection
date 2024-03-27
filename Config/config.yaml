@@ -15,6 +15,13 @@ data_validation:
   report_file_path: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_validation/report.yaml"
   missing_threshold: 0.1
 
+
 data_transformation:
   transformation_dir: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_transformation"
   preprocessor_file: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_transformation/preprocessor.pkl"
+
+
+model_trainer:
+  preprocessed_train_data: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_transformation/resampled_train_data.csv"
+  preprocessed_test_data: "D:/Machine_Learning_Projects/Sensor_App_Fault_Detection/artifacts/data_transformation/resampled_test_data.csv"
+
