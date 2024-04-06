@@ -10,5 +10,6 @@ pyYAML
 python-dotenv
 imblearn
 xgboost
+optuna
 
 -e .

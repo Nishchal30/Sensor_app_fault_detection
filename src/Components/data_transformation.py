@@ -8,7 +8,7 @@ import pandas as pd
 import sys, os
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import RobustScaler
+from sklearn.preprocessing import RobustScaler, StandardScaler
 from sklearn.preprocessing import LabelEncoder
 from imblearn.combine import SMOTETomek
 
@@ -53,7 +53,7 @@ class DataTransformation:
             feature_pipeline = Pipeline(
                 steps=[
                     ("Imputer", SimpleImputer(strategy="constant", fill_value=0)),
-                    ("Scaler", RobustScaler()),
+                    ("Scaler", StandardScaler()),
                 ]
             )
 

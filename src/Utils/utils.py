@@ -95,12 +95,19 @@ def evaluate_model(X_train : Any, y_train : Any, X_test : Any, y_test : Any, mod
         for i in range(len(models)):
             model = list(models.values())[i]
 
+            logging.info(f"training the {model} model")
+
             model.fit(X_train, y_train)
+            logging.info(f"fitted the model {model}")
+
             y_pred = model.predict(X_test)
+            logging.info(f"Predicted the values for {model}")
 
             score = r2_score(y_test, y_pred)
+            logging.info(f"score for {model} is {score}")
 
             report[list(models.keys())[i]] = score
+            logging.info(f"\n the model report is: {report}")
 
     except Exception as e:
         logging.error(f"Error occured at evaluate model method with: {e}")
