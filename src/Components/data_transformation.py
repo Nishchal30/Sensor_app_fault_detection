@@ -92,12 +92,14 @@ class DataTransformation:
             train_target_transformed_data = pd.DataFrame(
                 target_pipeline_obj.named_steps["lable_encoder"].fit_transform(
                     train_target_data
-                ), columns = ["class"]
+                ),
+                columns=["class"],
             )
             test_target_tarnsformed_data = pd.DataFrame(
                 target_pipeline_obj.named_steps["lable_encoder"].transform(
                     test_target_data
-                ), columns = ["class"]
+                ),
+                columns=["class"],
             )
 
             train_feature_transformed_data = pd.DataFrame(
@@ -149,7 +151,6 @@ class DataTransformation:
                 [test_feature_transformed_data, test_target_tarnsformed_data], axis=1
             )
 
-            
             os.makedirs(self.transformation_dir, exist_ok=True)
             final_train_data.to_csv(
                 os.path.join(self.transformation_dir, "resampled_train_data.csv"),
