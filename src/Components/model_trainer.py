@@ -100,7 +100,7 @@ class ModelTrainer:
             logging.error(f"Error occured at objective method with: {e}")
             raise CustomException(e, sys)
 
-    def fine_tune_model(self, X_train, X_test, y_train, y_test):
+    def fine_tune_model(self, X_train, y_train,X_test, y_test):
 
         try:
             logging.info("The optuna study will create here")

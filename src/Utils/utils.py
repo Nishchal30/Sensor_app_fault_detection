@@ -12,7 +12,9 @@ from src.exception import CustomException
 from dotenv import load_dotenv
 
 
-load_dotenv()
+@dataclass
+class EnvironmentVariable:
+    mongo_db_url:str = os.getenv("mongo_conn")
 
 
 def read_yaml(yaml_path : Path) -> str:
@@ -30,8 +32,8 @@ def read_yaml(yaml_path : Path) -> str:
 def data_dump_to_mongodb(data_url : str, db_name : str, collection_name : str):
     
     try:
-        mongo_client = os.environ.get("mongo_conn")
-        client = pymongo.MongoClient(mongo_client)
+        env_var = EnvironmentVariable()
+        client = pymongo.MongoClient(env_var.mongo_db_url)
         data = pd.read_csv(data_url)
 
         json_data = list(json.loads(data.T.to_json()).values())
